@@ -4,6 +4,7 @@ pipeline {
     stages{
         stage('test'){
         steps{
+           print "${params.multi}"
             echo "${params.multi}"
         }
     }}
