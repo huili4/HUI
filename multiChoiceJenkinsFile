@@ -4,8 +4,11 @@ pipeline {
     stages{
         stage('test'){
         steps{
-           print "${params.multi}"
-            echo "${params.multi}"
+          script{
+           if(params.multi == '')
+            {echo "null value"}
+            else{
+            echo "${params.multi}"}}
         }
     }}
 }
