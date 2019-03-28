@@ -6,6 +6,7 @@ pipeline {
         stage('test'){
         steps{
             build 'down_job'
+            build 'dowjob2'
             echo "hello world"
         }
     }}
