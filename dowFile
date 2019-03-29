@@ -5,6 +5,7 @@ pipeline {
         stage('test'){
         steps{
          echo 'hello world'
+         junit '*.xml'
         }
     }}
 }
